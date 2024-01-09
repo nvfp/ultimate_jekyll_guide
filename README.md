@@ -1,10 +1,10 @@
-let's make a website with Jekyll, but just the necessary part.
+Let's make a website with Jekyll, but just the necessary part.
 
-# level 1
+# Level 1
 
-the things that really need so we can at least see the website.
+The things that really need so we can at least see the website.
 
-only 4 things:
+Only 4 things:
 
 ```txt
 root/
@@ -14,11 +14,11 @@ root/
 └── Gemfile
 ```
 
-open the `level_1` folder to copy these 4 things. now, just simply type `bundle exec jekyll serve`, and we will see the simple website is now running on Jekyll. woho!
+Open the `level_1` folder to copy these 4 things. Now, just simply type `bundle exec jekyll serve`, and we will see the simple website is now running on Jekyll. Woho!
 
-# level 2
+# Level 2
 
-this is more customized, and every people has different set of "favorite" project structure. but, here's mine:
+This is more customized, and every people have a different set of "favorite" project structure. But, here's mine:
 
 ```txt
 root/
@@ -43,12 +43,12 @@ root/
 └── Gemfile
 ```
 
-copy from folder `folder_2` to get this structure. the `_layouts/` and `_sass/` folders are by default to store the HTML template and the main styles files. but here's my favorite way to organize the pages:
+Copy from the `level_2` folder to get this structure. The `_layouts/` and `_sass/` folders are by default to store the HTML template and the main styles files. But here's my favorite way to organize the pages:
 
-- the icons and media stuff will be in `assets/` folder (i usually put the all kind of media that related to website), 
-- and the webpages will be in `pages/` folder. 
-- if the webpages need specific style or script, each page can has its own `.scss` and `.js` file belong to them (so think of it like every page has default style, but each page could also override the main css).
-- not just html, scs, and js, but each page could also store media for its page, so like:
+- The icons and media stuff will be in the `assets/` folder (I usually put all kinds of media related to the website),
+- And the webpages will be in the `pages/` folder.
+- If the webpages need specific style or script, each page can have its own `.scss` and `.js` file belonging to them (so think of it like every page has default style, but each page could also override the main CSS).
+- Not just HTML, SCSS, and JS, but each page could also store media for its page, so like:
 
     ```txt
     └── page-abc/
@@ -61,11 +61,13 @@ copy from folder `folder_2` to get this structure. the `_layouts/` and `_sass/` 
         └── ...
     ```
 
-    by doing this, the media stuff more organized and belong to each specific page (unlike in `assets/` that belong to the website in general).
+    By doing this, the media stuff is more organized and belongs to each specific page (unlike in `assets/` that belongs to the website in general).
 
-- and after you more familiar with jekyll, you might need folder `_includes/` to store HTML that will be reused across your site, like something that is likely to be reusable. and also `_includes/` could be use as refactoring method, like if you want to refactor `<head>` from `_layouts/main.html`, you can put it in `_includes/head.html`.
+- And after you become more familiar with Jekyll, you might need the `_includes/` folder to store HTML that will be reused across your site, like something that is likely to be reusable. And also, `_includes/` could be used as a refactoring method, like if you want to refactor `<head>` from `_layouts/main.html`, you can put it in `_includes/head.html`.
 
-hope it helps, goodluck!
+Same, just run `bundle exec jekyll serve` and we will see the website running. That's it!
+
+Hope it helps, good luck!
 
 ## License
 
