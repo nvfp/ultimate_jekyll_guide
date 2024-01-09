@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foo</title>
-    <!-- ... -->
+    <title>{{ page.title }}</title>
+    
+    <!-- And the other stuff that needed -->
+    
     <link rel="stylesheet" type="text/css" href="/_sass/main.css">
+    {% if page.style %}
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ page.style }}">
+    {% endif %}
 </head>
 <body>
-    <!-- ... -->
+    {{ content }}
+
+    <!-- The website structure here -->
+    
+    {% if page.script %}
+        <!-- Custom JS if needed -->
+        <script type="module" src="{{ page.script }}"></script>
+    {% endif %}
 </body>
 </html>
