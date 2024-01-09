@@ -1,3 +1,5 @@
+# All variables here
+
 baseurl: ''
 url: https://github.com
 
@@ -8,3 +10,5 @@ include:
 sass:
   style: compressed
   sass_dir: _sass
+
+# And all others jekyll options here

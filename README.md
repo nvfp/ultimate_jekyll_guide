@@ -51,14 +51,15 @@ Copy from the `level_2` folder to get this structure. The `_layouts/` and `_sass
 - Not just HTML, SCSS, and JS, but each page could also store media for its page, so like:
 
     ```txt
-    └── page-abc/
-        └── index.html
-        └── index.scss
-        └── index.js
-        └── image-1.jpg
-        └── image-2.jpg
-        └── video-x.mp4
-        └── ...
+    └── pages/
+        └── page-abc/
+            └── index.html
+            └── index.scss
+            └── index.js
+            └── image-1.jpg
+            └── image-2.jpg
+            └── video-x.mp4
+            └── ...
     ```
 
     By doing this, the media stuff is more organized and belongs to each specific page (unlike in `assets/` that belongs to the website in general).
