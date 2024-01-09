@@ -1,2 +1,10 @@
 baseurl: ''
 url: https://github.com
+
+include: 
+  - _sass
+  - pages
+
+sass:
+  style: compressed
+  sass_dir: _sass
